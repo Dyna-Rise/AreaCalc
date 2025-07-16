@@ -8,10 +8,12 @@
   
 ## パズルブロックはプレハブ化 （OjbGenerator.csで順番に呼び出される）
 * サンプルでは何種類かの図形 ← PolygonCollider2Dの所持が必要
+
   
 ##スクリプト概要
+
   
-###OjbGenerator.cs
+### OjbGenerator.cs
 パズルブロックの生産者
 GameObject配列 blockPrefabsに登録したオブジェクトをランダムに選んで画面上部に待機させる
   
@@ -36,7 +38,8 @@ MakeRealStyle()でプレビューをやめて重力を有効にする
 * MakeRealStyleメソッド
 半透明を解いて重力を有効に戻す
 
-###AreaManagerDynamic.cs
+  
+### AreaManagerDynamic.cs
 using Clipper2Lib によりClipper2ライブラリの機能を活用して  
 ①背景オブジェクトの面積
 ②OjbGeneratorより登録されたプレハブたちの面積合計
